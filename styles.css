@@ -35,21 +35,6 @@ body {
   image-rendering: pixelated;
 }
 
-#notes {
-  margin-top: 2rem;
-}
-
-#notes textarea {
-  width: 80%;
-  height: 100px;
-  margin-bottom: 10px;
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #888;
-  font-family: monospace;
-  padding: 10px;
-}
-
 .day-number {
   font-size: 10px;
   color: #ccc;
