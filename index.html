@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, Moon!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthlyl Vitamin Tracker</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, Moon!</h1>
+  <header>
+    <h1>🍊 Pixel Vitamin Tracker</h1>
+    <div class="tile-picker">
+      <button onclick="selectTile('vitamin-taken')"><img src="tiles/yes.png" alt="Taken"></button>
+      <button onclick="selectTile('vitamin-missed')"><img src="tiles/no.png" alt="Missed"></button>
+    </div>
+    <button onclick="saveMap()">💾 Save</button>
+    <button onclick="loadMap()">🔄 Load</button>
+  </header>
+  <main>
+    <section id="calendar"></section>
+    <section id="notes">
+      <h2>📝 Other Topics & Ideas</h2>
+      <textarea id="topic-notes" placeholder="Add your thoughts here..."></textarea>
+      <button onclick="saveNotes()">Save Notes</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
-

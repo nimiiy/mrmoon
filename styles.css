@@ -1,0 +1,63 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.tile-picker button {
+  border: none;
+  background: transparent;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.tile-picker img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 32px);
+  gap: 4px;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.cell {
+  width: 32px;
+  height: 32px;
+  background-color: #444;
+  image-rendering: pixelated;
+}
+
+#notes {
+  margin-top: 2rem;
+}
+
+#notes textarea {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #888;
+  font-family: monospace;
+  padding: 10px;
+}
+
+.day-number {
+  font-size: 10px;
+  color: #ccc;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  pointer-events: none;
+}
+.cell {
+  position: relative;
+}
