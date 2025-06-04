@@ -49,15 +49,7 @@ function loadMap() {
   });
 }
 
-function saveNotes() {
-  const notes = document.getElementById('topic-notes').value;
-  localStorage.setItem('topicNotes', notes);
-  alert('Notes saved.');
-}
-
 window.onload = () => {
   loadMap();
-  const savedNotes = localStorage.getItem('topicNotes');
-  if (savedNotes) document.getElementById('topic-notes').value = savedNotes;
 };
 
